@@ -8,10 +8,14 @@ class BreakingCommas{
 			System.out.println(omegaSplit[i]);
 		}
 		String[] topTeams = teams.split(", ", 4);//modified this from omegaSplit to topTeam, but initially got an error.
-		//arrayOutOfBounds exception when it was 4, but understand why now.  For loop must have one of the arrays w/ on 3 things
+		//arrayOutOfBounds exception when it was 4, but understand why now.  For loop must have one of the arrays w/ on 3 things in it.
 		System.out.println("\n\n\n");
 		for (int i=0; i<topTeams.length; i++){
 			System.out.println("The Top Team(s) with a High Succes : "+topTeams[i]);
+		}
+		//Using new ForEach loop to iterate thru an array topTeams.  Guess it doesn't need '[]' as part of its syntax..
+		for (String arrTopTeams : topTeams){
+			System.out.println(arrTopTeams);
 		}
 	}
 }
